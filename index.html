@@ -25,7 +25,9 @@
           <a lang="en" class="logo" href="index.html">Web<span class="logo-st">Studio</span></a>
 
           <ul class="nav-link">
-            <li class="nav-link-li"><a class="link link-current" href="index.html">Студія</a></li>
+            <li class="nav-link-li">
+              <a class="link link-index link-current" href="index.html">Студія</a>
+            </li>
             <li class="nav-link-li"><a class="link" href="portfolio.html">Портфолі</a></li>
             <li class="nav-link-li"><a class="link" href="#">Контакти</a></li>
           </ul>
@@ -57,7 +59,7 @@
       <section class="decision">
         <div class="container">
           <h1 class="decision-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="menu-link-studio" type="button">Замовити послугу</button>
+          <button data-modal-open class="menu-link-studio" type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -121,13 +123,30 @@
 
           <ul class="what-we-do-ul">
             <li class="what-we-do-li">
-              <img src="./images/img01.jpg" alt="write on pc" width="370" height="294" />
+              <div class="img-div">
+                <img src="./images/img01.jpg" alt="write on pc" width="370" height="294" />
+                <div class="img-div-decor">
+                  <h6 class="decor-h">Десктопні додатки</h6>
+                </div>
+              </div>
             </li>
+
             <li class="what-we-do-li">
-              <img src="./images/img02.jpg" alt="design mobile app" width="370" height="294" />
+              <div class="img-div">
+                <img src="./images/img02.jpg" alt="design mobile app" width="370" height="294" />
+                <div class="img-div-decor">
+                  <h6 class="decor-h">Мобільні додатки</h6>
+                </div>
+              </div>
             </li>
+
             <li class="what-we-do-li">
-              <img src="./images/img03.jpg" alt="choose the color" width="370" height="294" />
+              <div class="img-div">
+                <img src="./images/img03.jpg" alt="choose the color" width="370" height="294" />
+                <div class="img-div-decor">
+                  <h6 class="decor-h">Дизайнерські рішення</h6>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -418,6 +437,18 @@
           </div>
         </div>
       </section>
+        <div data-modal class="modal is-hidden">
+          <div class="modal-w">
+             
+              <button data-modal-close class="btx"> 
+                <svg class="icon-close">
+                  <use href="./images/symbol-defs.svg#Vector"></use>
+                </svg>
+              </button>
+
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="cont-info">
@@ -428,8 +459,8 @@
           >
 
           <address class="contact-info">
-            <ul class="list-fotter">
-              <li class="l-fotter-li">
+            <ul class="list-footer">
+              <li class="l-footer-li">
                 <a
                   class="kyiv"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -439,14 +470,14 @@
                 >
               </li>
 
-              <li class="l-fotter-li">
-                <a class="l-fotter-li contact-ft" href="mailto:info@devstudio.com"
+              <li class="l-footer-li">
+                <a class="l-footer-li contact-ft" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
 
-              <li class="l-fotter-li">
-                <a class="l-fotter-li contact-ft" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="l-footer-li">
+                <a class="l-footer-li contact-ft" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -496,5 +527,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
