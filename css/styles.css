@@ -513,18 +513,13 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2); 
+  
   opacity: 1;
-  visibility: visible; 
-
-  animation-name: modalanim;
-  animation-duration: 1000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  animation-delay: 0;
-  animation-direction: normal;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -540,7 +535,6 @@ img {
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); 
 }
-
 .btx {
   display: flex;
   position: absolute;
@@ -561,7 +555,6 @@ img {
   width: 11px;
   height: 11px;
 }
-
 /*--------- fotter --------- */
 .container-ft {
   display: flex;
