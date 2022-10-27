@@ -741,7 +741,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   justify-content: center;
   align-items: center;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms ease;
 }
 .list-p-li:hover .overlay {
