@@ -140,7 +140,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition-property: color, transform;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -153,7 +153,7 @@ img {
 .link-index::after {
   position: absolute;
   display: inline-block;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: '';
   width: 100%;
@@ -164,7 +164,7 @@ img {
 .link-portfolio::after {
   position: absolute;
   display: inline-block;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: '';
   width: 100%;
@@ -198,7 +198,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition-property: color, transform;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -256,12 +256,13 @@ img {
   background: var(--menu-link-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   cursor: pointer;
   margin: auto;
   margin-top: 30px;
   padding: 10px 32px 10px 32px;
 
-  transition-property: color, box-shadow, transform;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -436,7 +437,7 @@ img {
   border-radius: 50%;
   fill: #afb1b8;
 
-  transition-property: background-color, fill, transform;
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -491,7 +492,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition-property: fill, border-color, transform;
+  transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -586,6 +587,7 @@ img {
 }
 .l-footer-li {
   margin-bottom: 9px;
+  text-decoration: none;
 }
 .l-footer-li:last-child {
   margin-bottom: 0px;
@@ -597,7 +599,7 @@ img {
   color: var(--kyiv);
   text-decoration: none;
 
-  transition-property: color, transform;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -616,7 +618,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--contact-ft);
 
-  transition-property: color, transform;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -629,12 +631,12 @@ img {
 .join {
   margin-top: 12px;
 }
-.title-fifth {
+.p-join {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 3%;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 /* ------------join svg---------- */
@@ -644,7 +646,6 @@ img {
   gap: 10px;
   padding: 0;
   justify-content: center;
-  margin-bottom: 30px;
 }
 .ft-social-svg > .ft-li-svg a {
   display: inline-flex;
@@ -654,7 +655,7 @@ img {
   fill: #ffffff;
   background-color: #ffffff1a;
 
-  transition-property: fill, background-color, transform;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -717,7 +718,7 @@ img {
 
 .list-p-li {
   flex-basis: calc((100% - 60px) / 3);
-  transition-property: box-shadow, transform;
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -771,7 +772,7 @@ img {
   border: none;
   padding: 6px 22px 6px 22px;
 
-  transition-property: color, background, box-shadow, border-radius, transform;
+  transition-property: color, background, box-shadow, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
